@@ -18,8 +18,6 @@ $(function () {
     ]
   });
 });
-
-
 function burgerMenu(selector) {
   let menu = $(selector);
   let button = menu.find(".burger__menu-button");
@@ -29,10 +27,8 @@ function burgerMenu(selector) {
     e.preventDefault();
     toggleMenu();
   });
-
   links.on('click', () => toggleMenu());
   overlay.on('click', () => toggleMenu());
-
   function toggleMenu() {
     menu.toggleClass('burger__menu-active');
     if (menu.hasClass('burger__menu-active')) {
